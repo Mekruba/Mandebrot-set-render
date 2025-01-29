@@ -1,5 +1,4 @@
 #include <complex.h>
-#include <math.h>
 #include <omp.h>
 #include <raylib.h>
 #include <raymath.h>
@@ -62,7 +61,7 @@ int main() {
   camera.zoom = 1.0f;
   camera.target = (Vector2){0.0f, 0.0f};
 
-  SetTargetFPS(60);
+  SetTargetFPS(30);
 
   Image image = GenImageColor(MANDELBROT_WIDTH, MANDELBROT_HEIGHT, BLACK);
   Texture2D texture = LoadTextureFromImage(image);
